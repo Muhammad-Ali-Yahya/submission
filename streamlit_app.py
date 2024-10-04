@@ -7,7 +7,7 @@ sns.set(style='dark')
 
 main_df = pd.read_csv("dashboard/main_data.csv")
 customers_df = pd.read_csv("data/olist_customers_dataset.csv")
-
+company_revenue.csv = pd.read_csv("/workspaces/submission/dashboard/company_revenue.csv")
 st.title("Submisson Data Analys Dicoding")
 
 st.markdown(
