@@ -7,8 +7,7 @@ sns.set(style='dark')
 
 main_df = pd.read_csv("dashboard/main_data.csv")
 customers_df = pd.read_csv("data/olist_customers_dataset.csv")
-company_revenue.csv = pd.read_csv("/workspaces/submission/dashboard/company_revenue.csv")
-st.title("Submisson Data Analys Dicoding")
+company_revenue_df = pd.read_csv("dashboard/company_revenue.csv")
 
 st.markdown(
     """
@@ -59,3 +58,8 @@ ax.set_title("Sales and Revenue Performance Over Time")
 ax.legend()
 
 st.pyplot(fig)
+
+st.text("Bagaimana performa penjualan dan revenue perusahaan dalam beberapa bulan terakhir?")
+st.markdown("""
+            terjadi progress kenaikan yang sangat bagus dari periode 2016-09 sampai dengan 2018-08, dan dilanjutkan dengan drop yang sangat menghawatirkan pada periode 2018-09 dan 2018-10"""
+            )
