@@ -1,7 +1,8 @@
 # Readme submission
 
 setup google collab
--tidak ada
+- load/panggil modul yang ada
+- jalankan/load seluruh dataset
 
 setup enviroment di bash command line di streamlit
 - pip install matplotlib
