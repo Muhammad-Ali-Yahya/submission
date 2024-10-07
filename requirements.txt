@@ -1,8 +1,5 @@
-folium
-geopandas
 numpy
 pandas
-seaborn
 matplotlib
 streamlit
-streamlit-folium
+seaborn
