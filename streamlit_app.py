@@ -2,8 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-from babel.numbers import format_currency
 sns.set(style='dark')
+
+#memanggil/load data csv untuk dijadikan dataframe
 
 main_df = pd.read_csv("dashboard/main_data.csv")
 customers_df = pd.read_csv("data/olist_customers_dataset.csv")
@@ -21,6 +22,8 @@ st.caption('Muhammad Ali Yahya ML-02')
 
 st.title("Hasil Analisa data pertama")
 st.header("Customer Demographics")
+
+#membuat visualisasi sederhana customer_demographics
 
 customer_demographics = customers_df.groupby('customer_state').agg({
     'customer_id':'count'
@@ -42,6 +45,8 @@ st.markdown("""
             )
 
 st.header("Monthly Performance")
+
+#membuat visualisasi data sederhana company_revenue yang disimpan ke dalam variable monthly_performance
 
 monthly_performance = company_revenue_df.groupby('month').agg({
     'order_id':'count', 'payment_value':'sum'
